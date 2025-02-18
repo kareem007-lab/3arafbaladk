@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اعرف بلدك - مصر</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="main-page">
+    <nav class="top-nav">
+        <button class="dev-info-btn" onclick="showDevInfo()">
+            <span class="material-icons">code</span>
+        </button>
+    </nav>
+
+    <header>
+        <img src="https://images.unsplash.com/photo-1562832135-14a35d25edef?w=200&h=200&fit=crop" alt="شعار الموقع" class="logo">
+        <div class="hieroglyph-header">
+            <span class="hieroglyph">𓀀</span>
+            <span class="hieroglyph">𓂧</span>
+            <span class="hieroglyph">𓏏</span>
+            <span class="hieroglyph">𓏤</span>
+            <span class="hieroglyph">𓋹</span>
+        </div>
+    </header>
+    
+    <div class="container">
+        <button class="main-btn" onclick="window.location.href='locations.html'">
+            <span class="material-icons">explore</span>
+            إعرف بلدك
+        </button>
+        <button class="about-btn" onclick="showAboutUs()">
+            <span class="material-icons">info</span>
+            من نحن
+        </button>
+    </div>
+
+    <!-- Modal for About Us -->
+    <div id="aboutUsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('aboutUsModal')">&times;</span>
+            <h2>مبادرة اعرف بلدك</h2>
+            <div class="modal-body">
+                <p>مبادرة "اعرف بلدك" هي مشروع وطني يهدف إلى تعريف المصريين والعالم بالكنوز الأثرية والتاريخية العظيمة التي تزخر بها مصر.</p>
+                <p>تأسست المبادرة عام 2025 بهدف:</p>
+                <ul>
+                    <li>نشر الوعي بالتراث المصري القديم</li>
+                    <li>تسهيل الوصول للمعلومات عن المواقع الأثرية</li>
+                    <li>تشجيع السياحة الداخلية والخارجية</li>
+                    <li>توثيق وحفظ التاريخ المصري للأجيال القادمة</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Developer Info -->
+    <div id="devInfoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('devInfoModal')">&times;</span>
+            <h2>معلومات المطور</h2>
+            <div class="modal-body dev-info">
+                <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?fit=crop&w=150&h=150" alt="صورة المطور" class="dev-photo">
+                <h3>محمد أحمد</h3>
+                <p class="dev-title">مطور ويب متخصص في تطبيقات التراث الثقافي</p>
+                <div class="dev-skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                </div>
+                <p class="dev-description">
+                    مطور ويب مصري متخصص في تطوير المواقع التراثية والثقافية. يعمل على مشاريع توثيق وحفظ التراث المصري رقمياً منذ 2020.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
